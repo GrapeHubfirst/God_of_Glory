@@ -1,0 +1,113 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Gods_Of_Glory = Instance.new("ScreenGui")
+local GodsOfGloryFrame = Instance.new("ImageLabel")
+local TextFrameGodsOfGlory = Instance.new("TextLabel")
+local CloseButton_Roundify_12px = Instance.new("ImageLabel")
+local CloseButton = Instance.new("TextButton")
+local INFManaButton_Roundify_12px = Instance.new("ImageLabel")
+local INFManaButton = Instance.new("TextButton")
+
+--Properties:
+
+Gods_Of_Glory.Name = "Gods_Of_Glory"
+Gods_Of_Glory.Parent = game.CoreGui
+
+GodsOfGloryFrame.Name = "GodsOfGloryFrame"
+GodsOfGloryFrame.Parent = Gods_Of_Glory
+GodsOfGloryFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GodsOfGloryFrame.BackgroundTransparency = 1.000
+GodsOfGloryFrame.Position = UDim2.new(0.31042847, 0, 0.262103498, 0)
+GodsOfGloryFrame.Size = UDim2.new(0, 190, 0, 284)
+GodsOfGloryFrame.Image = "rbxassetid://3570695787"
+GodsOfGloryFrame.ImageColor3 = Color3.fromRGB(170, 0, 255)
+GodsOfGloryFrame.ScaleType = Enum.ScaleType.Slice
+GodsOfGloryFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+GodsOfGloryFrame.SliceScale = 0.120
+GodsOfGloryFrame.Draggable = true
+GodsOfGloryFrame.Active = true
+GodsOfGloryFrame.Selectable = true
+
+TextFrameGodsOfGlory.Name = "TextFrameGodsOfGlory"
+TextFrameGodsOfGlory.Parent = GodsOfGloryFrame
+TextFrameGodsOfGlory.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+TextFrameGodsOfGlory.BorderColor3 = Color3.fromRGB(170, 0, 255)
+TextFrameGodsOfGlory.Position = UDim2.new(0.30443871, 0, 0.0257945526, 0)
+TextFrameGodsOfGlory.Size = UDim2.new(0, 77, 0, 42)
+TextFrameGodsOfGlory.Font = Enum.Font.SourceSans
+TextFrameGodsOfGlory.Text = "Gods Of Glory"
+TextFrameGodsOfGlory.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextFrameGodsOfGlory.TextSize = 39.000
+
+CloseButton_Roundify_12px.Name = "CloseButton_Roundify_12px"
+CloseButton_Roundify_12px.Parent = GodsOfGloryFrame
+CloseButton_Roundify_12px.Active = true
+CloseButton_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+CloseButton_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton_Roundify_12px.BackgroundTransparency = 1.000
+CloseButton_Roundify_12px.Position = UDim2.new(0.498598605, 0, 0.818661988, 0)
+CloseButton_Roundify_12px.Selectable = true
+CloseButton_Roundify_12px.Size = UDim2.new(0.857894719, 0, 0.200704217, 0)
+CloseButton_Roundify_12px.Image = "rbxassetid://3570695787"
+CloseButton_Roundify_12px.ImageColor3 = Color3.fromRGB(170, 0, 255)
+CloseButton_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+CloseButton_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+CloseButton_Roundify_12px.SliceScale = 0.120
+
+CloseButton.Name = "CloseButton"
+CloseButton.Parent = CloseButton_Roundify_12px
+CloseButton.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+CloseButton.BackgroundTransparency = 1.000
+CloseButton.BorderColor3 = Color3.fromRGB(170, 0, 255)
+CloseButton.BorderSizePixel = 0
+CloseButton.Position = UDim2.new(0, 0, 0.044415392, 0)
+CloseButton.Size = UDim2.new(0, 162, 0, 50)
+CloseButton.Font = Enum.Font.SourceSans
+CloseButton.Text = "Close"
+CloseButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+CloseButton.TextSize = 27.000
+CloseButton.MouseButton1Down:connect(function()
+	GodsOfGloryFrame.Visible = false
+end)
+
+INFManaButton_Roundify_12px.Name = "INFManaButton_Roundify_12px"
+INFManaButton_Roundify_12px.Parent = GodsOfGloryFrame
+INFManaButton_Roundify_12px.Active = true
+INFManaButton_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+INFManaButton_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+INFManaButton_Roundify_12px.BackgroundTransparency = 1.000
+INFManaButton_Roundify_12px.Position = UDim2.new(0.502631426, 0, 0.360915482, 0)
+INFManaButton_Roundify_12px.Selectable = true
+INFManaButton_Roundify_12px.Size = UDim2.new(0.931578934, 0, 0.221830979, 0)
+INFManaButton_Roundify_12px.Image = "rbxassetid://3570695787"
+INFManaButton_Roundify_12px.ImageColor3 = Color3.fromRGB(170, 0, 255)
+INFManaButton_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+INFManaButton_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+INFManaButton_Roundify_12px.SliceScale = 0.120
+
+INFManaButton.Name = "INFManaButton"
+INFManaButton.Parent = INFManaButton_Roundify_12px
+INFManaButton.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+INFManaButton.BackgroundTransparency = 1.000
+INFManaButton.BorderColor3 = Color3.fromRGB(170, 0, 255)
+INFManaButton.BorderSizePixel = 0
+INFManaButton.Position = UDim2.new(0.00939619541, 0, -0.00972151756, 0)
+INFManaButton.Size = UDim2.new(0, 175, 0, 50)
+INFManaButton.Font = Enum.Font.SourceSans
+INFManaButton.Text = "INFMana"
+INFManaButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+INFManaButton.TextSize = 26.000
+INFManaButton.MouseButton1Down:connect(function()
+	while true do
+		wait(0.1)
+		local A_1 = 
+			{
+				["Value"] = 10000000000000000000
+			}
+		local Event = game:GetService("ReplicatedStorage").Remotes.GiveMana
+		Event:FireServer(A_1)
+	end
+end)
